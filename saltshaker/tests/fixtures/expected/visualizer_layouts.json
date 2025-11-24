@@ -1,0 +1,159 @@
+{
+  "viz_sample_small": {
+    "total_events": 15,
+    "total_groups": 9,
+    "del_events": 2,
+    "dup_events": 13,
+    "group_list": [
+      "BL1",
+      "BL2",
+      "BL3",
+      "BL4",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5"
+    ],
+    "layout": {
+      "group_details": {
+        "BL1": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": true,
+          "layout": "single"
+        },
+        "BL2": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": true,
+          "layout": "single"
+        },
+        "BL3": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": true,
+          "layout": "single"
+        },
+        "BL4": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": true,
+          "layout": "single"
+        },
+        "G1": {
+          "event_count": 4,
+          "event_type": "dup",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G2": {
+          "event_count": 2,
+          "event_type": "del",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G3": {
+          "event_count": 2,
+          "event_type": "dup",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G4": {
+          "event_count": 2,
+          "event_type": "dup",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G5": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": false,
+          "layout": "single"
+        }
+      }
+    }
+  },
+  "viz_sample_large": {
+    "total_events": 80,
+    "total_groups": 10,
+    "del_events": 66,
+    "dup_events": 14,
+    "group_list": [
+      "BL1",
+      "BL2",
+      "BL3",
+      "BL4",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6"
+    ],
+    "layout": {
+      "group_details": {
+        "BL1": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": true,
+          "layout": "single"
+        },
+        "BL2": {
+          "event_count": 1,
+          "event_type": "del",
+          "is_blacklist": true,
+          "layout": "single"
+        },
+        "BL3": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": true,
+          "layout": "single"
+        },
+        "BL4": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": true,
+          "layout": "single"
+        },
+        "G1": {
+          "event_count": 10,
+          "event_type": "dup",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G2": {
+          "event_count": 50,
+          "event_type": "del",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G3": {
+          "event_count": 3,
+          "event_type": "del",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G4": {
+          "event_count": 2,
+          "event_type": "del",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G5": {
+          "event_count": 10,
+          "event_type": "del",
+          "is_blacklist": false,
+          "layout": "band"
+        },
+        "G6": {
+          "event_count": 1,
+          "event_type": "dup",
+          "is_blacklist": false,
+          "layout": "single"
+        }
+      }
+    }
+  }
+}
