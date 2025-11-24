@@ -473,4 +473,4 @@ docs/
 
 ## Documentation
 
-- [Classification algorithm](docs/classification_algorithm.md) - Detailed explanation of the Single vs Multiple pattern classification logic
+- [Classification algorithm](saltshaker/docs/classification_algorithm.md) - Detailed explanation of the Single vs Multiple pattern classification logic
