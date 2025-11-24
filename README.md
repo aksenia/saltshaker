@@ -424,11 +424,17 @@ saltshaker/
 ├── __init__.py
 ├── __main__.py                  # CLI entry point with subcommands
 ├── config.py                    # Configuration and thresholds
+├── types.py                     # Type definitions and data structures
 ├── event_caller.py              # Event calling (R script port)
 ├── classifier.py                # Pattern classification (single vs musltiple vs background)
 ├── spatial.py                   # Spatial grouping
 ├── visualizer.py                # Circular plotting
-├── utils.py                     # Utility functions
+├── utils.py                     # Utility functions 
+│                 
+├── layout/                      # Layout engine 
+│   ├── __init__.py
+│   ├── engine.py                # LayoutEngine class
+│   └── types.py                 # Layout-specific types
 ├── cli/
 │   ├── call.py                  # Call subcommand
 │   ├── classify.py              # Classify subcommand
@@ -438,9 +444,29 @@ saltshaker/
     ├── writers.py               # TSV and summary output
     └── vcf_writer.py            # VCF format output
 └── data/
-    ├── __init__.py              # Default file paths
+    ├── __init__.py                              # Default file paths
     ├── gencode.v49.annotation.MT_genes.bed      # Default MT gene annotations
     └── mt_blacklist_regions.bed                 # Default MT blacklist regions
+└── tests/
+    ├── fixtures/
+    │   ├── inputs/
+    │   │   ├── human_mt_rCRS.fasta         # Reference FASTA
+    │   │   ├── test_breakpoints.breakpoint # Small test dataset raw breakpoints  
+    │   │   ├── test_clusters.cluster       # Small test dataset raw clusters 
+    │   │   ├── viz_sample_small.tsv        # Small test dataset (15 events)
+    │   │   └── viz_sample_large.tsv        # Large test dataset (80 events)
+    │   └── expected/
+    │       ├── viz_sample_small.tsv        # Small test dataset (15 events)
+    │       └── visualizer_layouts.json     # Expected visualization characteristics
+    │
+    ├── unit/
+    │   ├── test_helpers.py                 # Utilities tests
+    │   ├── test_layout_engine.py           # Layout engine tests
+    │   └── test_label_positioning.py       # Visualization unit tests 
+    │
+    └── integration/
+        ├── test_saltshaker_output.py       # End-to-end event calling tests
+        └── test_visualizer.py              # End-to-end visualization tests 
 docs/
 └── classification_algorithm.md  # Detailed classification algorithm documentation
 ```
